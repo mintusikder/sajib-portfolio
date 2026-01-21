@@ -1,13 +1,26 @@
 import { createBrowserRouter } from "react-router";
 import Main from "../Layout/Main";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Experience from "../pages/Experience";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
     children: [
-      { path: "/", lazy: () => import("../pages/Home.jsx") },
-      { path: "/about", lazy: () => import("../pages/About.jsx") },
-      { path: "/contact", lazy: () => import("../pages/Contact.jsx") }, ]
+        {
+            path: "/",
+            element: <Home></Home>
+        },
+        {
+            path: "/about",
+            Component: About
+        },
+        {
+            path: "/experience",
+            element: <Experience></Experience>
+        }
+     ]
   },
 ]);
