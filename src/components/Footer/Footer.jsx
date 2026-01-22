@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex gap-5">
             <a
-              href="https://facebook.com"
+              href="https://web.facebook.com/relaks1122/?_rdc=1&_rdr#"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-blue-600 hover:text-white transition"
@@ -35,7 +35,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/imsr.cloud/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-pink-600 hover:text-white transition"
@@ -44,7 +44,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/imsr/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-blue-700 hover:text-white transition"
@@ -53,7 +53,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@imsr72"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-red-600 hover:text-white transition"
