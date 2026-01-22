@@ -1,5 +1,6 @@
 // src/pages/Experience.jsx
 import React from "react";
+import { motion } from "framer-motion";
 
 const experiences = [
   {
@@ -84,6 +85,16 @@ const experiences = [
   },
 ];
 
+// Motion variants for scroll animation
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 },
+  },
+};
+
 const Experience = () => {
   return (
     <section className="px-6 md:px-16 lg:px-24 xl:px-32 py-24 bg-gray-50 min-h-screen">
@@ -94,24 +105,33 @@ const Experience = () => {
       {/* GRID LAYOUT */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {experiences.map((exp, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition duration-300 flex flex-col"
+            className="bg-white rounded-2xl p-6 shadow-md flex flex-col transition duration-300 group hover:bg-red-50 hover:shadow-xl"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            whileHover={{ scale: 1.05 }}
           >
-            <h2 className="text-xl font-semibold mb-2">{exp.title}</h2>
+            <h2 className="text-xl font-semibold mb-2 group-hover:text-red-600">
+              {exp.title}
+            </h2>
 
-            <p className="text-sm text-gray-500 mb-4">
-              {exp.company}
+            <p className="text-sm mb-4">
+              <span className="text-black font-medium group-hover:text-red-600">
+                {exp.company}
+              </span>
               {exp.location && ` | ${exp.location}`}
               {exp.duration && ` | ${exp.duration}`}
             </p>
 
-            <ul className="list-disc list-inside text-gray-700 space-y-2 text-sm">
+            <ul className="list-disc list-inside space-y-2 text-sm text-black group-hover:text-gray-800">
               {exp.responsibilities.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
