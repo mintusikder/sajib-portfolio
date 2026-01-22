@@ -4,6 +4,7 @@ import aboutImg from "../assets/banner.jpeg";
 import Experience from "./Experience";
 import Contact from "./Contact";
 import Work from "./Work";
+import Brands from "./Brands";
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
       <About />
       <Work></Work>
       <Experience />
+      <Brands />
       <Contact />
     </>
   );

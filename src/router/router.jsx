@@ -10,22 +10,22 @@ export const router = createBrowserRouter([
     path: "/",
     element: <Main></Main>,
     children: [
-        {
-            path: "/",
-            element: <Home></Home>
-        },
-        {
-            path: "/about",
-            Component: About
-        },
-        {
-            path: "/experience",
-            element: <Experience></Experience>
-        },
-        {
-            path: "/contact",
-            element: <Contact></Contact>
-        }
-     ]
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/about",
+        Component: About,
+      },
+      {
+        path: "/experience",
+        element: <Experience></Experience>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+    ],
   },
 ]);

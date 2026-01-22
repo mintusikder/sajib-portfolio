@@ -11,10 +11,8 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 mt-24">
       <div className="px-6 md:px-16 lg:px-24 xl:px-32">
-        
         {/* Top */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          
           {/* Logo / Name */}
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-berkshire text-white">
@@ -72,7 +70,6 @@ const Footer = () => {
         <div className="text-center text-sm text-gray-500">
           © {new Date().getFullYear()} Sajib. All rights reserved.
         </div>
-
       </div>
     </footer>
   );
