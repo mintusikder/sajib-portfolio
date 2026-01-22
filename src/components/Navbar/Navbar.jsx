@@ -47,7 +47,7 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <ul className="md:flex hidden items-center gap-10 font-medium">
-        {["Home", "About", "Experience", "Services", "Pricing"].map((item) => (
+        {["Home", "About", "Experience", "Contact", "Pricing"].map((item) => (
           <li key={item}>
             <NavLink
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
@@ -84,7 +84,7 @@ const Navbar = () => {
             exit="exit"
           >
             <ul className="flex flex-col gap-4 text-lg">
-              {["Home", "About", "Experience", "Services", "Pricing"].map(
+              {["Home", "About", "Experience", "Contact", "Pricing"].map(
                 (item) => (
                   <li key={item}>
                     <NavLink

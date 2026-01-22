@@ -2,6 +2,8 @@ import React from "react";
 import About from "./About";
 import aboutImg from "../assets/banner.jpeg";
 import Experience from "./Experience";
+import Contact from "./Contact";
+import Work from "./Work";
 
 const Home = () => {
   return (
@@ -31,7 +33,9 @@ const Home = () => {
       </section>
 
       <About />
+      <Work></Work>
       <Experience />
+      <Contact />
     </>
   );
 };
