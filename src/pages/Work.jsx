@@ -1,47 +1,47 @@
 import React from "react";
 
-// import fiza from "../assets/work/fiza.jpg";
-// import panorama from "../assets/work/panorama.jpg";
-// import grandAkther from "../assets/work/grand-akther.jpg";
-// import khushbu from "../assets/work/khushbu.jpg";
-// import roastedBrew from "../assets/work/roasted-brew.jpg";
-// import hiltown from "../assets/work/hiltown.jpg";
+import fiza from "../assets/work/fiza.jpeg";
+import panorama from "../assets/work/panorama.jpeg";
+import grandAkther from "../assets/work/grand-akther.jpeg";
+import khushbu from "../assets/work/khushbu.jpeg";
+import roastedBrew from "../assets/work/roasted-brew.jpeg";
+import hiltown from "../assets/work/hiltown.jpeg";
 
 const works = [
   {
     title: "Fiza & Co. Private Limited",
     description:
       "Fiza & Co. is one of the most trusted food brands in Bangladesh and has been recognized for its quality and dedication.",
-    // image: fiza,
+    image: fiza,
   },
   {
     title: "Panorama – Rooftop Restaurant & Party Centre",
     description:
       "PANORAMA: Where dining embraces panoramic vistas and celebrations reach new heights at Sylhet!",
-    // image: panorama,
+    image: panorama,
   },
   {
     title: "Hotel Grand Akther",
     description: "Redefining luxury stay with premium hospitality services.",
-    // image: grandAkther,
+    image: grandAkther,
   },
   {
     title: "খুশবু রেস্টুরেন্ট (Khushbu Restaurant)",
     description:
       "নান্দনিক ধাঁচের অন্দরসজ্জা আর অনন্য স্বাদসমৃদ্ধ খাবারের সমারোহে আপনাকে স্বাগতম!",
-    // image: khushbu,
+    image: khushbu,
   },
   {
     title: "Roasted Brew Cafe",
     description:
       "Something new for coffee lovers with a modern cafe experience.",
-    // image: roastedBrew,
+    image: roastedBrew,
   },
   {
     title: "Hiltown Hotel",
     description:
       "Welcome to Hiltown Hotel, where VIP comfort meets unparalleled luxury.",
-    // image: hiltown,
+    image: hiltown,
   },
 ];
 

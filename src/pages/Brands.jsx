@@ -1,35 +1,35 @@
 // src/pages/Brands.jsx
 import React from "react";
 
-// import shaun from "../assets/brands/shaun-tait.jpg";
-// import ethan from "../assets/brands/ethan-brookes.jpg";
-// import moeen from "../assets/brands/moeen-ali.jpg";
-// import parvez from "../assets/brands/parvez-emon.jpg";
+import shaun from "../assets/Brands/shaun.jpeg";
+import ethan from "../assets/Brands/wthan.jpeg";
+import moeen from "../assets/Brands/moeen.jpeg";
+import parvez from "../assets/Brands/parvez.jpeg";
 
 const brands = [
   {
     name: "Shaun Tait",
     description:
       "With the legendary Shaun Tait! One of the fastest bowlers in cricket history and a true inspiration.",
-    // image: shaun,
+    image: shaun,
   },
   {
     name: "Ethan Brookes",
     description:
       "Behind the scenes with Ethan Brookes — turning ideas into engaging content that connects.",
-    // image: ethan,
+    image: ethan,
   },
   {
     name: "Moeen Ali",
     description:
       "Behind the scenes with Moeen Ali — transforming concepts into media that connects.",
-    // image: moeen,
+    image: moeen,
   },
   {
     name: "Parvez Hossain Emon",
     description:
       "Behind the scenes with Parvez Hossain Emon — turning ideas into engaging content that connects.",
-    // image: parvez,
+    image: parvez,
   },
 ];
 
@@ -56,11 +56,11 @@ const Brands = () => {
             className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
           >
             {/* Image */}
-            {/* <img
+            <img
               src={brand.image}
               alt={brand.name}
               className="w-full h-56 object-cover"
-            /> */}
+            />
 
             {/* Content */}
             <div className="p-6">
