@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Logo / Name */}
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-berkshire text-white">
-              Sajib Portfolio
+              Sagar Chandra Roy
             </h2>
             <p className="text-sm mt-2 text-gray-400">
               Creative Professional & Brand Strategist
@@ -68,7 +68,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Sajib. All rights reserved.
+          © {new Date().getFullYear()} Sagar Chandra Roy. All rights reserved.
         </div>
       </div>
     </footer>

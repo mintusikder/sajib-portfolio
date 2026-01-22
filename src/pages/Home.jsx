@@ -30,11 +30,22 @@ const Home = () => {
           </h1>
 
           <p className="mt-6 text-lg text-gray-200">Brand Content Creator</p>
+
+          {/* About Me Button */}
+          <div className="mt-10 flex justify-center">
+            <a
+              href="#about"
+              className="px-8 py-3 rounded bg-red-600 text-white font-medium text-lg
+                         hover:bg-red-700 transition duration-300 shadow-lg"
+            >
+              About Me
+            </a>
+          </div>
         </div>
       </section>
 
       <About />
-      <Work></Work>
+      <Work />
       <Experience />
       <Brands />
       <Contact />

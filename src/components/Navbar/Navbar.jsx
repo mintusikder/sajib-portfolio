@@ -47,15 +47,15 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <ul className="md:flex hidden items-center gap-10 font-medium">
-        {["Home", "About", "Experience", "Contact", "Pricing"].map((item) => (
+        {["Home", "About", "Work", "Experience", "Brands", "Contact", ].map((item) => (
           <li key={item}>
             <NavLink
               to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
               className={({ isActive }) =>
                 `transition ${
                   isActive
-                    ? "text-blue-600 font-semibold"
-                    : "hover:text-blue-500"
+                    ? "text-red-600 font-semibold"
+                    : "hover:text-red-500"
                 }`
               }
             >
@@ -84,13 +84,13 @@ const Navbar = () => {
             exit="exit"
           >
             <ul className="flex flex-col gap-4 text-lg">
-              {["Home", "About", "Experience", "Contact", "Pricing"].map(
+              {["Home", "About", "Work", "Experience", "Brands", "Contact", ].map(
                 (item) => (
                   <li key={item}>
                     <NavLink
                       to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                       onClick={() => setIsOpen(false)}
-                      className="hover:text-blue-500 transition"
+                      className="hover:text-red-500 transition"
                     >
                       {item}
                     </NavLink>

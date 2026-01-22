@@ -15,6 +15,7 @@ const Contact = () => {
           <h2 className="text-2xl font-semibold mb-4">
             Let’s work together
           </h2>
+
           <p className="text-gray-600 mb-8">
             Have a project in mind or just want to say hello?  
             Feel free to reach out — I’m always open to new opportunities.
@@ -39,7 +40,7 @@ const Contact = () => {
         </div>
 
         {/* Right: Contact Form */}
-        <div className="bg-white rounded-2xl shadow-md p-8">
+        <div className="bg-gray-100 rounded-2xl p-8">
           <form className="space-y-6">
             <div>
               <label className="block text-sm font-medium mb-1">
@@ -48,7 +49,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="Your name"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 outline-none focus:outline-none"
               />
             </div>
 
@@ -59,7 +60,7 @@ const Contact = () => {
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 outline-none focus:outline-none"
               />
             </div>
 
@@ -70,13 +71,13 @@ const Contact = () => {
               <textarea
                 rows="5"
                 placeholder="Write your message..."
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500"
-              ></textarea>
+                className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 outline-none focus:outline-none resize-none"
+              />
             </div>
 
             <button
               type="submit"
-              className="w-full bg-indigo-600 text-white py-3 rounded-full font-medium hover:bg-indigo-700 transition"
+              className="px-8 py-3 bg-red-600 text-white rounded font-medium hover:bg-red-700 transition duration-300"
             >
               Send Message
             </button>
